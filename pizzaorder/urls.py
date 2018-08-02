@@ -23,9 +23,7 @@ urlpatterns = [
     url(r'^orders/(?P<pk>\d+)/$', views.RetrieveUpdateDestroyOrder.as_view(), name='order_detail'),
     url(r'^orders/client/(?P<client>.+)/$', views.ListOrderClient.as_view(), name='order_clients'),
     url(r'^clients/$', views.ClientList.as_view(), name='client_list'),
-    url(r'^clients/(?P<pk>\d+)/$', views.ClientDetailstList.as_view(), name='client_detail'),
+    url(r'^clients/(?P<pk>\d+)/$', views.ClientDetailsList.as_view(), name='client_detail'),
     url(r'^pizzas/$', views.PizzaList.as_view(), name='pizza_list'),
-    url(r'^pizzas/(?P<pk>\d+)/$', views.PizzaDetailstList.as_view(), name='pizza_detail'),
+    url(r'^pizzas/(?P<pk>\d+)/$', views.PizzaDetailsList.as_view(), name='pizza_detail'),
 ]
-
-
