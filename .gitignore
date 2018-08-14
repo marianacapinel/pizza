@@ -1,0 +1,7 @@
+# IDE configuration
+.idea
+*.iml
+
+# Python bytecode
+__pycache__
+*.pyc

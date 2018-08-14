@@ -3,6 +3,7 @@ from . import models
 from . import serializers
 from .models import Order
 
+
 # Create your views here.
 
 
@@ -29,7 +30,7 @@ class ClientList(generics.ListAPIView):
     serializer_class = serializers.ClientSerializer
 
 
-class ClientDetailstList(generics.RetrieveAPIView):
+class ClientDetailsList(generics.RetrieveAPIView):
     queryset = models.Client.objects.all()
     serializer_class = serializers.ClientSerializer
 
@@ -39,7 +40,6 @@ class PizzaList(generics.ListAPIView):
     serializer_class = serializers.PizzaSerializer
 
 
-
-class PizzaDetailstList(generics.RetrieveAPIView):
+class PizzaDetailsList(generics.RetrieveAPIView):
     queryset = models.Pizza.objects.all()
     serializer_class = serializers.PizzaSerializer

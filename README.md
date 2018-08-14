@@ -32,7 +32,11 @@ The database was created with PostgreSQL and it is named __pizzaservice__. It co
 In the cmd go to the file's directory. 
 Then type: 
 
-> python manage.py runserver 
+```bash
+$ pip install -r requirements.txt
+$ python manage.py migrate
+$ python manage.py runserver
+``` 
 
 
 # Run the tests
